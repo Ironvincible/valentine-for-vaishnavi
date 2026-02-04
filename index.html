@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Vaishnavi 💖 | Valentine's Proposal</title>
+    
+    <!-- EXTERNAL CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- External Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-heart"></i> For My Beautiful Vaishnavi <i class="fas fa-heart"></i></h1>
+            <p class="tagline">A special Valentine's proposal from your Ajay</p>
+        </header>
+
+        <div class="card-container">
+            <div class="card" id="card">
+                <!-- Front of Card -->
+                <div class="card-front" id="card-front">
+                    <div class="front-content">
+                        <div class="couple-names">
+                            <span class="name-ajay">Ajay</span>
+                            <i class="fas fa-heart heartbeat"></i>
+                            <span class="name-vaishnavi">Vaishnavi</span>
+                        </div>
+                        
+                        <h2 class="main-title">Will You Be My Valentine?</h2>
+                        <p class="sub-message">Every moment with you is precious. You're the reason my world is beautiful.</p>
+                        
+                        <!-- Animated Hearts Container -->
+                        <div class="floating-hearts" id="floating-hearts"></div>
+                        
+                        <div class="flip-hint">
+                            <i class="fas fa-hand-point-up"></i> Click to open my heart
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back of Card -->
+                <div class="card-back">
+                    <!-- Left Side - Message -->
+                    <div class="message-side">
+                        <div class="message-header">
+                            <h2><i class="fas fa-heart"></i> To My Dearest Vaishnavi</h2>
+                        </div>
+                        
+                        <div class="message-content">
+                            <div class="message-text">
+                                <p>My Dearest Vaishnavi,</p>
+                                <p>From the moment our paths crossed, you've brought a special light into my life. Your smile, your laughter, your kindness - every little thing about you makes my heart skip a beat.</p>
+                                <p>I cherish every memory we've created together. You've shown me what true love means, and I'm grateful for you every single day.</p>
+                                <p>Vaishnavi, you are my best friend, my confidant, and the person I want to share all of life's adventures with.</p>
+                            </div>
+                            
+                            <!-- Proposal Question -->
+                            <div class="proposal-section">
+                                <div class="proposal-question">
+                                    <p>Vaishnavi Verma, will you be my Valentine?</p>
+                                    <div class="answer-buttons">
+                                        <button class="yes-btn" id="yes-btn">YES! <i class="fas fa-heart"></i></button>
+                                        <button class="no-btn" id="no-btn">Maybe...</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Love Counter -->
+                            <div class="memory-counter">
+                                <div class="counter-box">
+                                    <i class="fas fa-heart"></i>
+                                    <div class="counter-number" id="days-count">365</div>
+                                    <p>Days I've loved you in my heart</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="message-footer">
+                            <div class="signature">
+                                <p>With all my love, forever and always</p>
+                                <p class="signature-name">Your Ajay Verma 💝</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side - Photo Gallery -->
+                    <div class="photo-side">
+                        <div class="photo-header">
+                            <h3><i class="fas fa-camera"></i> My Beautiful Vaishnavi</h3>
+                        </div>
+                        
+                        <div class="photo-display">
+                            <div class="photo-container" id="photo-container">
+                                <!-- Photos will be loaded by JavaScript -->
+                            </div>
+                            
+                            <div class="photo-nav" id="photo-nav">
+                                <!-- Navigation will be added by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="control-panel">
+            <button class="control-btn flip-btn" id="flipBtn">
+                <i class="fas fa-sync-alt"></i> Flip Card
+            </button>
+            <button class="control-btn reset-btn" id="resetBtn">
+                <i class="fas fa-redo"></i> Reset
+            </button>
+        </div>
+
+        <!-- Background Music -->
+        <div class="music-player">
+            <audio id="bg-music" loop>
+                <source src="assets/music/Khayaal.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <button id="music-toggle" class="music-btn">
+                <i class="fas fa-music"></i> Play Music
+            </button>
+            <div class="volume-control">
+                <i class="fas fa-volume-down"></i>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5">
+                <i class="fas fa-volume-up"></i>
+            </div>
+        </div>
+
+        <!-- Celebration Message -->
+        <div class="celebration-overlay" id="celebration-overlay">
+            <div class="celebration-content">
+                <i class="fas fa-heart celebration-heart"></i>
+                <h2>You Said YES! 💖</h2>
+                <p class="celebration-message">Vaishnavi, you've made me the happiest man in the world!</p>
+                <button class="close-celebration" id="close-celebration">Continue</button>
+            </div>
+        </div>
+
+        <footer>
+            <p class="footer-text">
+                Made with <i class="fas fa-heart"></i> by Ajay for Vaishnavi
+            </p>
+        </footer>
+    </div>
+
+    <!-- EXTERNAL JAVASCRIPT FILE -->
+    <script src="script.js"></script>
+</body>
+</html>
